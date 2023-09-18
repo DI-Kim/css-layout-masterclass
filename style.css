@@ -1,7 +1,19 @@
-body {
-  background-color: tomato;
+.father {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* row: main-axis is horizontal, column: main-axis is vertical */
+  gap: 20px; /* gap은 계속 적용이 되는 상태 */
+  justify-content: space-around; /* move the items on the main-axis */
+  align-items: center; /* move the items on the cross-axis */
 }
 
-h1 {
+.box {
+  background-color: tomato;
+  width: 200px;
+  height: 200px;
   color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
