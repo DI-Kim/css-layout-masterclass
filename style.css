@@ -1,10 +1,10 @@
 .father {
   height: 100vh;
   display: flex;
-  flex-direction: column; /* row: main-axis is horizontal, column: main-axis is vertical */
-  gap: 20px; /* gap은 계속 적용이 되는 상태 */
-  justify-content: space-around; /* move the items on the main-axis */
-  align-items: center; /* move the items on the cross-axis */
+  gap: 10px; /* gap은 계속 적용이 되는 상태 */
+  flex-wrap: wrap; /* select single-line(nowrap) or multi-line(wrap) */
+  justify-content: center;
+  flex-flow: column wrap; /* flex-direction + flex-wrap */
 }
 
 .box {
