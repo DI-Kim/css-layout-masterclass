@@ -1,6 +1,6 @@
 .father {
   display: grid;
-  grid-template-columns: 100px 200px;
+  grid-template-columns: 100px 200px 50px;
   grid-template-rows: 200px 100px;
   row-gap: 10px;
   column-gap: 20px;
@@ -13,4 +13,19 @@
   font-size: 36px;
   justify-content: center;
   align-items: center;
+}
+
+.child:first-child {
+  background-color: burlywood;
+  /* grid-row-start: 1;
+  grid-row-end: -1; */
+  grid-row: 1 / -1;
+}
+
+.child:last-child {
+  background-color: turquoise;
+  /* -1 은 항상 마지막 그리드 라인을 의미한다. 배열과 같은 개념*/
+  /* grid-column-start: 2;
+  grid-column-end: -1; */
+  grid-column: 2 / -1;
 }
