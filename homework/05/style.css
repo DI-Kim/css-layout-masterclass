@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  font-size: 50px;
+  text-align: center;
+  min-height: 80px;
+}
+
+.father {
+  display: grid;
+  min-height: 50vh;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px, 1fr);
+}
+
+.grid_child {
+  display: grid;
+  grid-template-rows: 50% 30px;
+  align-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  margin: 25px;
+}
+
+.person {
+  font-size: 10px;
+  text-align: center;
+}
+
+.child1 {
+  background-color: #bfbda7;
+}
+.child2 {
+  background-image: url(https://img.freepik.com/free-photo/beautiful-landscape_1417-1583.jpg);
+  background-position: center;
+}
+
+.child3 {
+  background-color: #fe4714;
+}
+.child4 {
+  background-image: url(https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/landscape-photography/CODERED_B1_landscape_P2d_714x348.jpg.img.jpg);
+  background-position: center;
+}
+
+.child5 {
+  background-color: #847f96;
+}
+
+.child6 {
+  background-color: #d0ff71;
+}
+
+.child7 {
+  background-color: #993433;
+}
+
+.child8 {
+  background-color: #3aa9fa;
+}
+.child9 {
+  background-image: url(https://i.pinimg.com/474x/9e/85/dc/9e85dcf648f3bc3b37b35ad9314c0795.jpg);
+  background-position: center;
+}
+
+.child10 {
+  background-color: #41907a;
+}
+.child11 {
+  background-image: url(https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+  background-position: center;
+}
+
+.child12 {
+  background-color: #e3c4e5;
+}
