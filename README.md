@@ -1,3 +1,3 @@
 # CSS Layout Masterclass in 2weeks
 
-## 09 / 14 days
+## 10 / 14 days

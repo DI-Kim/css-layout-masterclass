@@ -5,31 +5,50 @@
   box-sizing: border-box;
 }
 
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
+
 body {
   display: flex;
   justify-content: center;
 }
 
+.overflow {
+  max-width: 40px;
+  font-style: italic;
+  word-break: break-all;
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 100vh;
-  height: 70vh;
+  max-height: 70vh;
   display: grid;
   grid-template:
-    "header header header" 50px
+    "header header header" 40px
     "left middle right" 1fr
-    "footer footer footer" 50px / 50px 1fr 50px;
+    "footer footer footer" 40px / 50px 1fr 50px;
 }
 
 .border {
-  border: 5px solid #fd6b3a;
+  border: 5px solid #ce1027;
+  line-height: 30px;
+  color: #ce1027;
+  font-style: italic;
 }
+
 .border-without {
-  border: 5px solid #fd6b3a;
+  border: 5px solid #ce1027;
   border-top: none;
   border-bottom: none;
 }
@@ -40,14 +59,69 @@ header {
 
 .left {
   grid-area: left;
+  display: grid;
+  grid-template-rows: 6fr 3fr 1fr;
+  color: #ce1027;
+}
+
+.orange-white {
+  background-color: #ce1027;
+  color: white;
+}
+
+.vertical {
+  max-height: 40px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  transform-origin: 0 100%;
 }
 
 .middle {
   grid-area: middle;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.middle-left {
+  background-image: url(https://images.unsplash.com/photo-1618237586696-d3690dad22e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVEJTk1JTlDJUVDJTk4JUE1fGVufDB8fDB8fHww&w=1000&q=80);
+  background-position: center;
+}
+
+.middle-right {
+  background-image: url(https://png.pngtree.com/background/20230321/original/pngtree-delicious-mouth-watering-bibimbap-picture-image_2153731.jpg);
+  background-position: center;
 }
 
 .right {
   grid-area: right;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #003e87;
+  color: white;
+}
+
+.right div:first-child {
+  border-bottom: 5px solid #ce1027;
+}
+
+.right div,
+.left div {
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -69,9 +143,11 @@ footer {
   will-change: transform;
   font-size: 1.2em;
 }
+
 .track .to-left {
   animation: toLeft 12s linear infinite;
 }
+
 .to-right {
   animation: toRight 12s linear infinite;
 }
@@ -80,14 +156,17 @@ footer {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
 }
+
 @keyframes toRight {
   from {
     transform: translateX(-50%);
   }
+
   to {
     transform: translateX(0%);
   }
