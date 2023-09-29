@@ -2,6 +2,7 @@ html {
   height: 100%;
   width: 100%;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ html {
   display: grid;
   font-size: 24px;
 }
+
 .middle div {
   padding: 10px;
   writing-mode: vertical-lr;
@@ -29,6 +31,7 @@ html {
   position: relative;
   background-color: #ff00ff;
 }
+
 .special img {
   position: absolute;
   z-index: 2;
@@ -41,4 +44,74 @@ html {
 .forever {
   transform: scale(-1);
   background-color: #1900ff;
+}
+
+.left-container {
+  background-color: #ff7f0f;
+  color: #ff0300;
+  padding: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template:
+    "section title classification" 50px
+    "section title year" 50px / 30px 5fr 2fr;
+  font-size: 14px;
+  border: 0.5px solid #ff0300;
+}
+
+.card div {
+  border: inherit;
+}
+
+.section {
+  grid-area: section;
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+  line-height: 30px;
+  text-align: center;
+}
+
+.title {
+  grid-area: title;
+  font-size: 70px;
+  line-height: 100px;
+  padding-left: 10px;
+}
+
+.classification {
+  grid-area: classification;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.year {
+  grid-area: year;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.year div {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff0300;
+  color: #ff7f0f;
+  width: 150px;
+  text-align: center;
+}
+
+.card:hover {
+  border-color: white;
+  color: white;
+}
+.card:hover .year div {
+  background-color: white;
 }
