@@ -1,0 +1,179 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.title {
+  font-size: 26px;
+  padding: 10px;
+}
+.big {
+  font-size: 34px;
+}
+p {
+  padding: 10px;
+  font-size: 12px;
+}
+ul {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+li:hover {
+  background-color: #dddddd;
+}
+li:first-child {
+  border-top: 1px solid black;
+  background-color: #dddddd;
+}
+
+.father {
+  height: 90vh;
+  display: grid;
+  grid-template:
+    "a b c c c d d d" 4fr
+    "a b c c c e e f" 1fr
+    "a b c c c e e g" 1fr
+    "a b c c c h i i" 2fr
+    "a j k l n n n n" 1fr
+    "a j k m n n n n" 1fr / 3fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.father,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.m,
+.n {
+  border: 1.5px solid black;
+}
+
+.a {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+  background-image: url(https://m.skychang.kr/web/product/big/202007/fc01c6d4d5e9d20bc18357a608633d6e.jpg);
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.d {
+  grid-area: d;
+  background-image: url(https://img.freepik.com/premium-photo/front-view-on-blank-light-grey-wall-with-place-for-your-logo-or-text-in-spacious-industrial-style-coworking-office-with-concrete-floor-cozy-workspaces-and-green-plants-3d-rendering-mock-up_670147-1528.jpg);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.e {
+  grid-area: e;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1cco431PcrltAfBCKgzoJrmcoFSEOk8ep7Q&usqp=CAU);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f {
+  grid-area: f;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGxqHhgDTDw90P7CuWgYcZ_ERX3gchYNlskQ&usqp=CAU);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.g {
+  grid-area: g;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tvYh5BFjnRLn0R5OI6Ye0u2uBcPOGCP0wQ&usqp=CAU);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.h {
+  grid-area: h;
+  background-image: url(https://cdn-saas-web-218-228.cdn-nhncommerce.com/leanback62_godomall_com/data/goods/23/02/09/1000000034/1000000034_detail_059.jpg);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.i {
+  grid-area: i;
+  background-image: url(https://media.istockphoto.com/id/1284066336/ko/%EC%82%AC%EC%A7%84/covid-19-%EC%A0%84%EC%97%BC%EB%B3%91-%EB%8F%99%EC%95%88-%EC%BD%94%EC%9B%8C%ED%82%B9-%EC%98%A4%ED%94%BC%EC%8A%A4-%EB%82%B4%EB%B6%80%EC%9D%98-%ED%98%84%EB%8C%80-%EA%B0%80%EC%A0%9C%ED%8A%B8.jpg?s=170667a&w=0&k=20&c=XzRvU80AKtRjrbVg_cgdgRq6NfzUGBwrCGe1Yv8FaIo=);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.j {
+  grid-area: j;
+}
+
+.k {
+  grid-area: k;
+  background-image: url(https://ppss.kr/wp-content/uploads/2016/01/Strategic-Meeting-540x281.jpg);
+  background-size: auto 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.l {
+  grid-area: l;
+  background-image: url(https://img.freepik.com/free-photo/businessmen-hands-on-white-table-with-documents-and-drafts_176420-349.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.m {
+  grid-area: m;
+  background-image: url(https://yozm.wishket.com/media/news/850/1_Yxyi6tu.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.n {
+  grid-area: n;
+  background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjBfODUg/MDAxNDgyMjE1MDcxNDY3.aVnsSICIPEl2hEAvLt8IQQkDzAXKsF5mT0OmcO9GQQgg.6XwdCFU2hoboaRF-VrGq56Delz-8Z8zUKo9qzJP4hM8g.JPEG.dolldance/12.jpg?type=w420);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
